@@ -1,6 +1,6 @@
 import { useState } from "react";
 import WelcomeScreen from "@/components/WelcomeScreen";
-import ChatInterface from "@/components/ChatInterface";
+import CareerForm from "@/components/CareerForm";
 
 type AppState = 'welcome' | 'chat';
 
@@ -21,7 +21,7 @@ const Index = () => {
         <WelcomeScreen onStart={handleStart} />
       )}
       {appState === 'chat' && (
-        <ChatInterface onBack={handleBack} />
+        <CareerForm onBack={handleBack} />
       )}
     </>
   );
